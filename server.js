@@ -13,35 +13,6 @@ mongoose.connect(
   "mongodb+srv://presi123:presi123@cluster0.dfo33ti.mongodb.net/MovieDB?retryWrites=true&w=majority"
 );
 
-
-// add movies
-app.post("/add",(req,res)=>{
-    var data=req.body
-    res.json({"status":"success","data":data})
-})
-
-// search movies
-app.post("/search",(req,res)=>{
-    var data=req.body
-    res.json({"status":"success","data":data})
-})
-
-// view all movies
-app.post("/viewAll",(req,res)=>{
-    var data=req.body
-    res.json({"status":"success","data":data})
-})
-
-// delete movies
-app.post("/delete",(req,res)=>{
-    var data=req.body
-    res.json({"status":"success","data":data})
-})
-
-
-
-
-
 app.listen(4000,()=>{
     console.log("server starts running")
 })
