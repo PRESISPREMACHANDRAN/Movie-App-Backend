@@ -27,6 +27,14 @@ app.post("/viewAll",(req,res)=>{
     res.json({"status":"success","data":data})
 })
 
+// delete movies
+app.post("/delete",(req,res)=>{
+    var data=req.body
+    res.json({"status":"success","data":data})
+})
+
+
+
 
 
 app.listen(4000,()=>{
