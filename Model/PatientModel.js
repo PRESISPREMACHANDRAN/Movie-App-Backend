@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const movieSchema = mongoose.Schema({
   movieName: String,
   actorName: String,
