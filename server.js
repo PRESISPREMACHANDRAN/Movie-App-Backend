@@ -9,6 +9,10 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors())
 
+mongoose.connect(
+  "mongodb+srv://presi123:presi123@cluster0.dfo33ti.mongodb.net/MovieDB?retryWrites=true&w=majority"
+);
+
 
 // add movies
 app.post("/add",(req,res)=>{
