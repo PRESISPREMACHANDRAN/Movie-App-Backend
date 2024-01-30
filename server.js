@@ -21,7 +21,11 @@ app.post("/search",(req,res)=>{
     res.json({"status":"success","data":data})
 })
 
-
+// view all movies
+app.post("/viewAll",(req,res)=>{
+    var data=req.body
+    res.json({"status":"success","data":data})
+})
 
 
 
