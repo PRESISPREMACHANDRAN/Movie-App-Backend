@@ -9,11 +9,19 @@ app.use(express.urlencoded({extended:true}))
 app.use(cors())
 
 
-
+// add movies
 app.post("/add",(req,res)=>{
     var data=req.body
     res.json({"status":"success","data":data})
 })
+
+// search movies
+app.post("/search",(req,res)=>{
+    var data=req.body
+    res.json({"status":"success","data":data})
+})
+
+
 
 
 
