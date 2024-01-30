@@ -21,7 +21,10 @@ app.post("/search",(req,res)=>{
     res.json({"status":"success","data":data})
 })
 
-
+app.post("/viewAll",(req,res)=>{
+    var data=req.body
+    res.json({"status":"success","data":data})
+})
 
 
 
